@@ -7,16 +7,15 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="144dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
         tools:layout_editor_absoluteY="73dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -31,7 +30,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRight"
         tools:layout_editor_absoluteX="16dp" />
 
     <EditText
@@ -42,22 +41,22 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLeft"
         tools:layout_editor_absoluteX="253dp" />
 
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="editTextTextMultiLine,button2,editTextTextMultiLine3,button"
+        app:constraint_referenced_ids="editTextTextMultiLine,buttonLeft,editTextTextMultiLine3,buttonRight"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="221dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:hint = "0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
@@ -66,10 +65,10 @@
         app:layout_constraintVertical_bias="0.202" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:hint = "0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
