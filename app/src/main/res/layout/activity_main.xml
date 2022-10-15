@@ -7,29 +7,29 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonLeft"
+        android:id="@+id/button_Left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btns"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLineLeft"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine_Left"
+        app:layout_constraintEnd_toStartOf="@+id/button_Right"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLeft" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Left" />
 
     <Button
-        android:id="@+id/buttonRight"
+        android:id="@+id/button_Right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btns"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLineRight"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine_Right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRight" />
+        app:layout_constraintStart_toEndOf="@+id/button_Left"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Right" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLineLeft"
+        android:id="@+id/editTextTextMultiLine_Left"
         android:layout_width="114dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -39,11 +39,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLineRight"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLeft" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine_Right"
+        app:layout_constraintTop_toBottomOf="@+id/button_Left" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLineRight"
+        android:id="@+id/editTextTextMultiLine_Right"
         android:layout_width="114dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -51,31 +51,31 @@
         android:inputType="textMultiLine"
         android:hint="Home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLineLeft"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine_Left"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRight" />
+        app:layout_constraintTop_toBottomOf="@+id/button_Right" />
 
     <TextView
-        android:id="@+id/textViewRight"
+        android:id="@+id/textView_Right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="0"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLeft"
+        app:layout_constraintBottom_toTopOf="@+id/button_Left"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textViewLeft"
+        app:layout_constraintStart_toEndOf="@+id/textView_Left"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewLeft"
+        android:id="@+id/textView_Left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="0"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRight"
-        app:layout_constraintEnd_toStartOf="@+id/textViewRight"
+        app:layout_constraintBottom_toTopOf="@+id/button_Right"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Right"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

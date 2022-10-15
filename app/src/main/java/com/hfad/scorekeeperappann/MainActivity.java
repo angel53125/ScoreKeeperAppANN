@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Create Buttons and text views
-        Button btnLeft = (Button) findViewById(R.id.buttonLeft);
-        Button btnRight = (Button) findViewById(R.id.buttonRight);
-        TextView tvRight = (TextView) findViewById(R.id.textViewRight);
-        TextView tvLeft = (TextView) findViewById(R.id.textViewLeft);
+        Button btnLeft = (Button) findViewById(R.id.button_Left);
+        Button btnRight = (Button) findViewById(R.id.button_Right);
+        TextView tvRight = (TextView) findViewById(R.id.textView_Right);
+        TextView tvLeft = (TextView) findViewById(R.id.textView_Left);
 
 
         if (savedInstanceState != null)
